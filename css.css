@@ -95,17 +95,21 @@ content{ /* inställningar allt content*/
     position: relative;
     display: none; /* none är bara tillfälligt */
 } 
-table{
-    width: 100%;
-    height: 100%;
+a.btn-l{
+    color: #293e95;
+    background-color: #be2b2b;
+    font-size: 100px;
+    float: left;
+    cursor: pointer;
 }
-tr{
-    width: 100%;
+a.btn-r{
+    color: #293e95;
+    background-color: #be2b2b;
+    font-size: 100px;
+    float: right;
+    cursor: pointer;
 }
-td img{
-    width: 25%;
-    height: 25%;
-}
+
 @media screen and (max-width:750px){ /*kod för mobiler*/
     nav ul{
         width: 100%;

@@ -20,27 +20,38 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-    <content>
-            <table>
-                <tr>
-                    <td><img src="Images/d%C3%B6rrbyte%20klart.jpg"></td>
-                    <td><img src="Images/k%C3%B6k%20p%C3%A5g%C3%A5ende.jpg"></td>
-                    <td><img src="Images/k%C3%B6k%20n%C3%A4stan%20klart.jpg"></td>
-                </tr>
-                <tr>
-                    <td><img src="Images/tv%C3%A4ttstuga%20f%C3%B6re.jpg"></td>
-                    <td><img src="Images/tv%C3%A4ttstuga%20efter.jpg"></td>
-                    <td><img src="Images/dusch.jpg"></td>
-                </tr>
-                <tr>
-                    <td><img src="#"></td>
-                    <td><img src="#"></td>
-                    <td><img src="#"></td>
-                </tr>
-            </table>
+        <content class="index">
+            <img class="mySlides" src="slideshow/panelbyte%20slideshow.jpg" style="width: 100%; height: 100%;">
+            <img class="mySlides" src="slideshow/k%C3%B6ksrenovering%20slideshow.jpg" style="width: 100%; height: 100%;">
+            <img class="mySlides" src="slideshow/d%C3%B6rrflytt%20slideshow.jpg" style="width: 100%; height: 100%;">
+            <img class="mySlides" src="slideshow/d%C3%B6rrflytt%20klar%20slideshow.jpg" style="width: 100%; height: 100%;">
+            <a class="btn-l" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="btn-r" onclick="plusDivs(1)">&#10095;</a>
     </content>
     <fotter>
     
     </fotter>
+        
+        
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
     </body>
 </html>
