@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    background-image: url(Images/bakgrund.jpg);
+    background-size: cover;
+}
+header{ /* style header*/
+    padding:15px;
+    width: 100%;
+    background-color: #d66d6d;
+    display: inline-block;
+    font-size: 26px;
+    font-family: impact,charcoal, sans-serif;
+    margin: 0;
+    border-bottom:solid 4px #be2b2b;
+    border-left: solid 4px #be2b2b;
+}
+header h1{ /* text rubrik*/
+    color: red;
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px blue;
+}
+.headimg{ /* bild header*/
+    
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inherit;
+    position: relative;
+    width: 20%;
+}
+nav ul{ /* Meny listan/ meny rutan*/
+    text-align: center;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #4359b1;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    float: left;
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-bottom: solid 4px #0d2379;
+    border-left:solid 4px #0d2379;
+    border-right: solid 4px #0d2379;
+}
+nav ul li{ /*positionering av knappar*/
+    
+}
+li a{ /* Styling på knappar*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 100%;
+}
+li a:hover{ /* knapparnas hover funktion*/
+    background-color: #293e95;
+    color: #010140;
+    -webkit-transition-duration: 0.6s;
+    -webkit-transition-delay: 0.2s;
+}
+
+content{ /* inställningar allt content*/
+    position: relative;
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    height: 100%;
+    font-size: 26px;
+    /*border: solid 2px black;*/
+    
+}
+.kontakt { /* content på kontaktsidan*/
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}
+.mail{ /* länk för mailadress */
+    color: inherit;
+    text-decoration: underline;
+}
+ fotter{ /*ruta längst ner*/
+    width: 100%;
+    height: 10%;
+    background-color:#4359b1;
+    position: relative;
+    display: none; /* none är bara tillfälligt */
+} 
+table{
+    width: 100%;
+    height: 100%;
+}
+tr{
+    width: 100%;
+}
+td img{
+    width: 25%;
+    height: 25%;
+}
+@media screen and (max-width:750px){ /*kod för mobiler*/
+    nav ul{
+        width: 100%;
+        height:auto;
+        float: none;
+        position: relative;
+        padding: 20px 20px;
+    }
+    header{
+        display: none;
+    }
+    content{
+        float: none;
+        width: 100%;
+        position: relative;
+        font-size: 20px;
+    }
+    .kontakt{
+        font-size: 20px;
+    }
+}
