@@ -93,9 +93,9 @@ content{ /* inställningar allt content*/
     height: 10%;
     background-color:#4359b1;
     position: relative;
-    display: none; /* none är bara tillfälligt */
+    display: none;
 } 
-a.btn-l{
+a.btn-l{ /* knapp slideshow vänster */
     color: #293e95;
     background-color: #be2b2b;
     font-size: 80px;
@@ -105,7 +105,7 @@ a.btn-l{
     top: 50%;
     left: 0%;
 }
-a.btn-r{
+a.btn-r{ /* kann slideshow höger*/
     color: #293e95;
     background-color: #be2b2b;
     font-size: 80px;
@@ -137,13 +137,17 @@ a.btn-r{
         font-size: 20px;
     }
     a.btn-l{
-        font-size: 40px;
-        color: black;
-        background-color: rgba(255, 255, 255, 0.21);
+        position: relative;
+        width: 50%;
+        font-size: 50px;
     }
     a.btn-r{
-        font-size: 40px;
-        color: black;
-        background-color: rgba(255, 255, 255, 0.21);
+        position: relative;
+        width: 50%;
+        text-align: right;
+        font-size: 50px;
+    }
+    img.mySlides{
+        height: 50%;
     }
 }
