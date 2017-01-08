@@ -98,16 +98,22 @@ content{ /* inställningar allt content*/
 a.btn-l{
     color: #293e95;
     background-color: #be2b2b;
-    font-size: 100px;
+    font-size: 80px;
     float: left;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0%;
 }
 a.btn-r{
     color: #293e95;
     background-color: #be2b2b;
-    font-size: 100px;
+    font-size: 80px;
     float: right;
     cursor: pointer;
+    position:absolute;
+    top: 50%;
+    right:0%;
 }
 
 @media screen and (max-width:750px){ /*kod för mobiler*/
@@ -129,5 +135,15 @@ a.btn-r{
     }
     .kontakt{
         font-size: 20px;
+    }
+    a.btn-l{
+        font-size: 40px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.21);
+    }
+    a.btn-r{
+        font-size: 40px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.21);
     }
 }
