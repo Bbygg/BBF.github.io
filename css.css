@@ -10,13 +10,13 @@ body{
 header{ /* style header*/
     padding:15px;
     width: 100%;
-    background-color: #d66d6d;
+    background-color: #bdc3c7;
     display: inline-block;
     font-size: 26px;
     font-family: impact,charcoal, sans-serif;
     margin: 0;
-    border-bottom:solid 4px #be2b2b;
-    border-left: solid 4px #be2b2b;
+    border-bottom:solid 6px #7f8c8d;
+    border-left: solid 6px #7f8c8d;
 }
 header h1{ /* text rubrik*/
     color: red;
@@ -39,19 +39,25 @@ nav ul{ /* Meny listan/ meny rutan*/
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color: #4359b1;
+    background-color: #bdc3c7;
     position: relative;
     width: 25%;
     height: 100%;
     float: left;
     font-size: 25px;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    border-bottom: solid 4px #0d2379;
-    border-left:solid 4px #0d2379;
-    border-right: solid 4px #0d2379;
+    border-right: 5px solid #7f8c8d; 
 }
 nav ul li{ /*positionering av knappar*/
     
+}
+li a.top{
+    background-color: #7f8c8d;
+    display: block;
+    width: 100%;
+}
+li a.top:hover{
+    background-color: #7f8c8d;
 }
 li a{ /* Styling på knappar*/
     display: block;
@@ -62,7 +68,7 @@ li a{ /* Styling på knappar*/
     width: 100%;
 }
 li a:hover{ /* knapparnas hover funktion*/
-    background-color: #293e95;
+    background-color: #95a5a6;
     color: #010140;
     -webkit-transition-duration: 0.6s;
     -webkit-transition-delay: 0.2s;
