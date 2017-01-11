@@ -164,6 +164,6 @@ a.btn-r{ /* knapp slideshow höger*/
         font-size: 50px;
     }
     img.mySlides{
-        height: 50%;
+        height: 100px;
     }
 }
